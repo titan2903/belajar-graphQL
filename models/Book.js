@@ -6,7 +6,6 @@ const BookSchema = new mongoose.Schema({
     description: String,
     release_year: Number,
     genre: String,
-    created_date: Date,
 })
 
 const Book = mongoose.model('Book', BookSchema)
