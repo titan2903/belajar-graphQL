@@ -12,6 +12,7 @@ const typeDefs = gql`
 
     type Query {
         getAllBooks: [Book]!
+        getBookById(_id: ID!): Book 
     }
 
     type Mutation {

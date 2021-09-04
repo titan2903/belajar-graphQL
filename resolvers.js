@@ -2,7 +2,8 @@ const BookModel = require('./models/Book')
 
 module.exports = {
     Query: {
-        getAllBooks: async () => await BookModel.find({})
+        getAllBooks: async () => await BookModel.find({}),
+        getBookById: async(_, args) => await BookModel.findById(args._id)
     },
 
     Mutation: {
